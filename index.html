@@ -4,11 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List</title>
+    <title>To Do List | DG</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./asserts/fonts/fonts.css">
 </head>
 <body>
-    
+    <h1>To Do List | DG</h1>
+    <div class="content">
+        <div class="content--add-item">
+            <!-- input, botão -->
+            <input type="text" id="input-new-task" placeholder="Digite sua nova task">
+            <button id="btn-new-task">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                  </svg>
+            </button>
+        </div>
+        <div class="content--body">
+            <!-- lista -->
+            <ul id="to-do-list">
+
+            </ul>
+        </div>
+    </div>
 </body>
 <script src="script.js"></script>
 </html>
