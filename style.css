@@ -1,4 +1,5 @@
 :root{
+    /*No dia em que precisar mudar algum tom de cor - vai refletir em todos os cantos*/
     --color-dark: rgb(14, 14, 14);
     --color-dark2: rgb(32, 32, 32);
     --color-dark3: rgb(22, 22, 22);
@@ -12,7 +13,7 @@
 body{
    
     font-family: 'Lato';
-    background-color: var(--color-dark);
+    background-color: var(--color-dark2);
     color: var(--color-white);
     display: flex;
     flex-direction: column;
@@ -66,7 +67,9 @@ background-color: var(--color-dark3);
     gap: 1rem;
     padding: 0;
     margin: auto;
-    width: 30%;
+    max-width: 30%;
+    
+    
    
 }
 #to-do-list li{
@@ -75,4 +78,31 @@ background-color: var(--color-dark3);
     text-transform: capitalize;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    transition: .4s ease-in-out;
+   
+}
+#to-do-list li:hover{
+background-color: var(--color-dark3);
+transition: .4s ease-in-out;
+border-radius: 1rem;
+ padding-left: 1rem;
+}
+
+#btn-ok{
+    background-color: var(--color-green);
+    border: none;
+    color: var(--color-white);
+    padding: .4rem .8rem;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .4s;
+}
+#btn-ok:hover{
+    background-color: var(--color-green2);
 }
