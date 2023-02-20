@@ -1,8 +1,9 @@
+
 :root{
     /*No dia em que precisar mudar algum tom de cor - vai refletir em todos os cantos*/
     --color-dark: rgb(14, 14, 14);
-    --color-dark2: rgb(32, 32, 32);
-    --color-dark3: rgb(22, 22, 22);
+    --color-dark2: rgb(28, 28, 29);
+    --color-dark3: rgb(95, 93, 93);
     --color-white: #fff;
     --color-green: rgb(103, 195, 80);
     --color-green2: rgb(51, 149, 26);
@@ -13,12 +14,31 @@
 body{
    
     font-family: 'Lato';
-    background-color: var(--color-dark2);
+    background-image: linear-gradient(to right, rgb(162, 13, 248),rgb(42, 134, 219));
     color: var(--color-white);
     display: flex;
     flex-direction: column;
     text-align: center;
     gap: 4rem;
+    
+    
+    
+}
+main{
+    background-image: linear-gradient(to right, rgb(42, 134, 219),rgb(162, 13, 248));
+    backdrop-filter: inherit;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    border-radius: 10px;
+   padding: 10px;
+   
+}
+@media screen and (max-width:900px){
+    main{
+        width: 90%;
+    }
     
 }
 
@@ -67,7 +87,7 @@ background-color: var(--color-dark3);
     gap: 1rem;
     padding: 0;
     margin: auto;
-    max-width: 30%;
+    width: 60%;
     
     
    
@@ -83,7 +103,7 @@ background-color: var(--color-dark3);
    
 }
 #to-do-list li:hover{
-background-color: var(--color-dark3);
+background-color: rgb(30, 86, 207);
 transition: .4s ease-in-out;
 border-radius: 1rem;
  padding-left: 1rem;
