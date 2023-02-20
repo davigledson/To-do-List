@@ -14,7 +14,8 @@
 body{
    
     font-family: 'Lato';
-    background-image: linear-gradient(to right, rgb(162, 13, 248),rgb(42, 134, 219));
+    background-image: url(asserts/images/pexels-pixabay-54101.jpg);
+    background-size: cover;
     color: var(--color-white);
     display: flex;
     flex-direction: column;
@@ -23,18 +24,21 @@ body{
     
     
     
+  
 }
 main{
-    background-image: linear-gradient(to right, rgb(42, 134, 219),rgb(162, 13, 248));
+    background-color: rgba(13, 29, 248, 0.596);
     backdrop-filter: inherit;
     width: 50%;
     display: flex;
     flex-direction: column;
     margin: auto;
     border-radius: 10px;
-   padding: 10px;
+    padding: 10px;
+    backdrop-filter: blur(5px);
    
 }
+
 @media screen and (max-width:900px){
     main{
         width: 90%;
@@ -48,7 +52,9 @@ main{
     justify-content: center;
     gap: 4rem;
     
+    
 }
+
 .content--add-item{
     display: flex;
     align-items: center;
@@ -103,7 +109,7 @@ background-color: var(--color-dark3);
    
 }
 #to-do-list li:hover{
-background-color: rgb(30, 86, 207);
+background-color: rgb(32, 171, 236);
 transition: .4s ease-in-out;
 border-radius: 1rem;
  padding-left: 1rem;
