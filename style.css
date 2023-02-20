@@ -7,8 +7,8 @@
     --color-white: #fff;
     --color-green: rgb(103, 195, 80);
     --color-green2: rgb(51, 149, 26);
-    --color-red: rgb(184, 40, 35);
-    --color-red2: rgb(146, 22, 17);
+    --color-blue: rgba(13, 29, 248, 0.596);
+    --color-blue2: rgba(23, 207, 240, 0.658);
     --purple:purple
 }
 body{
@@ -27,7 +27,7 @@ body{
   
 }
 main{
-    background-color: rgba(13, 29, 248, 0.596);
+    background-color: var(--color-blue);
     backdrop-filter: inherit;
     width: 50%;
     display: flex;
@@ -109,7 +109,7 @@ background-color: var(--color-dark3);
    
 }
 #to-do-list li:hover{
-background-color: rgb(32, 171, 236);
+background-color: var(--color-blue2);
 transition: .4s ease-in-out;
 border-radius: 1rem;
  padding-left: 1rem;
