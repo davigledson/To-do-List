@@ -16,6 +16,7 @@ body{
     font-family: 'Lato';
     background-image: url(asserts/images/magic-cube.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     color: var(--color-white);
     display: flex;
     flex-direction: column;
@@ -43,7 +44,12 @@ main{
     main{
         width: 90%;
     }
-    
+    #to-do-list li{
+        width: 100%;
+       
+      
+        
+    }
 }
 
 .content{
@@ -96,6 +102,7 @@ background-color: var(--color-dark3);
     width: 60%;
     
     
+    
    
 }
 #to-do-list li{
@@ -104,8 +111,11 @@ background-color: var(--color-dark3);
     text-transform: capitalize;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     transition: .4s ease-in-out;
+
+   word-break: break-all ;
+   
    
 }
 #to-do-list li:hover{
