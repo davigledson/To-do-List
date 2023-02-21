@@ -40,26 +40,6 @@ main{
    
 }
 
-@media screen and (max-width:900px){
-    main{
-        width: 90%;
-    }
-    #to-do-list li{
-        width: 100%;
-       
-      
-        
-    }
-}
-
-.content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 4rem;
-    
-    
-}
 
 .content--add-item{
     display: flex;
@@ -114,7 +94,7 @@ background-color: var(--color-dark3);
     align-items: flex-start;
     transition: .4s ease-in-out;
 
-   word-break: break-all ;
+   word-break: break-all ; /*Quebra linha quando ultrapassa a largura máxima*/
    
    
 }
@@ -141,4 +121,26 @@ border-radius: 1rem;
 }
 #btn-ok:hover{
     background-color: var(--color-green2);
+}
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4rem;
+    
+    
+}
+@media screen and (max-width:900px){
+    main{
+        width: 90%;
+    }
+   
+}
+@media screen and (max-width:600px){
+    
+    #to-do-list{
+        width: 90%;
+    }
 }
